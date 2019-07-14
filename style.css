@@ -15,6 +15,7 @@ section{
     background-color: #ebebeb;
     width: 495px;
     float: left;
+    margin: 0px 10px 10px 10px;
     margin-left: 0%;
     margin-right: 2%;
     margin-bottom: 2%;
@@ -24,10 +25,8 @@ section{
 article{
     color: #ebebeb;
     background-color: #777;
-    padding: 10px;
-    padding-top: 20px;
-    margin: 10px;
-    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 10px 10px 10px;
 }
 
 
@@ -53,24 +52,25 @@ p{
 /* Classes */
 .article-boxes{
     /* maintains appearance between the different boxes within the article */
-    margin-bottom: 2%;
-    margin-top: 2%;
-    padding: 5%;
+    margin: 20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
 }
 
 .header-nav-footer{
     /* created to keep the same appearance between the header, navbar, and footer */
-    clear: both;
     background-color: #ebebeb;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-
+    margin: 10px 0px 10px 0px;
+    padding: 30px 0px 30px 0px;
 }
 
 .side-by-side{
     /* used to ensure the heights of the two divs article/aside remained the same */
-    padding-top: 4%;
+    padding: 40px 0px 0px 0px;
     height: 275px;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }
